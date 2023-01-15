@@ -22,6 +22,7 @@ body {
 }
 
 .location {
+    position: relative;
     width: 493px;
     height: 666px;
     border-radius: 30px;
@@ -29,11 +30,21 @@ body {
 }
 
 .location__img {
+    opacity: 0.3;
+    width: 493px;
+    height: 666px;
+    border-radius: 30px;
+}
 
+.location__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .location__info {
-    margin: 48px auto 84px 32px;
+    margin-top: 48px;
+    margin-left: 32px;
 }
 
 .location__info-day {
@@ -45,12 +56,48 @@ body {
 .location__info-date {
     font-weight: 500;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
+.location__info-place {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
 
+.location__info-place-nav {
+    height: 27px;
+    width: 27px;
+}
 
+.location__info-place-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 8px;
+}
 
-.weather-info {
+.location__weather {
+    margin-left: 32px;
+}
+
+.location__weather-icon {
+    height: 95px;
+    width: 95px;
+    margin-bottom: 9px;
+}
+
+.location__weather-temperature {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 13px;
+}
+
+.location__weather-descriprion {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.weather__info {
     width: 520px;
     height: 600px;
     border-radius: 0 25px 25px 0;

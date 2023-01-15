@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Weather App</title>
 </head>
 <body>
     <div class="container">
         <div class="location">
-            <div class="location__img">
-
-            </div>
-            <div class="location__info">
-                <div class="location__info-day">
-                    Tuesday
+            <img src="assets/nsk.jpg" alt="location img" class="location__img" />
+            <div class="location__wrapper">
+                <div class="location__info">
+                    <div class="location__info-day">Tuesday</div>
+                    <div class="location__info-date">14 Jun 2023</div>
+                    <div class="location__info-place">
+                        <img src="assets/icons/navigation.svg" alt="navigation" class="location__info-place-nav" />
+                        <div class="location__info-place-name">Novosibirsk, RU</div>
+                    </div>
                 </div>
-                <div class="location__info-date">
-                    14 Jun 2023
-                </div>
-                <div class="location__info-place">
-                    
+                <div class="location__weather">
+                    <img src="assets/icons/sunny.svg" alt="" class="location__weather-icon" />
+                    <div class="location__weather-temperature">29 °C</div>
+                    <div class="location__weather-descriprion">Sunny</div>
                 </div>
             </div>
         </div>
-        <div class="weather-info">
-
+        <div class="weather__info">
+            <div class="weather__info-parameters">
+                
+            </div>
         </div>
     </div>
 </body>
