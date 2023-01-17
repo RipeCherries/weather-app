@@ -104,9 +104,13 @@ body {
     background: #222831;
 }
 
+.weather__wrapper {
+    margin: 55px 50px 62px 55px;
+}
+
 .weather__info {
-    margin: 55px 50px auto 55px;
     font-size: 28px;
+    margin-bottom: 316px;
 }
 
 .weather__info-precipitation {
@@ -132,4 +136,22 @@ body {
 
 .weather__info-value {
     font-weight: 500;
+}
+
+.change-location {
+    display: flex;
+    justify-content: center;
+}
+
+.change-location__btn {
+    height: 53px;
+    width: 415px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90.8deg, rgba(144, 217, 224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
 }
