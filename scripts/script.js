@@ -3,7 +3,7 @@ const link = "http://api.weatherstack.com/current?access_key=e17e90a1e5ef27e7eca
 const selectors = {
     day: document.querySelector(".location__info-day"),
     date: document.querySelector(".location__info-date"),
-    place: document.querySelector(".location__info-place-name")   
+    place: document.querySelector(".location__info-place-name")
 }
 
 let store = {
@@ -45,27 +45,27 @@ const fetchData = async () => {
 }
 
 const render = () => {
-    selectors.day.innerHTML = getDayName(store.localTime);
-    selectors.date.innerHTML = getFullData(store.localTime);
-    selectors.place.innerHTML = getPlaceName(store.countryCode, store.city);
+    selectors.day.innerHTML = getDayName();
+    selectors.date.innerHTML = getFullData();
+    selectors.place.innerHTML = getPlaceName();
 }
 
-const getDayName = (date) => {
+const getDayName = () => {
     const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-    return dayNames[new Date(date).getDay()];
+    return dayNames[new Date(store.localTime).getDay()];
 }
 
-const getFullData = (date) => {
+const getFullData = () => {
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
-    const d = new Date(date);
+    const d = new Date(store.localTime);
 
     return d.getDate() + " " + monthNames[d.getMonth()] + " " + d.getFullYear();
 }
 
-const getPlaceName = (countryCode, city) => {
-    return city + ", " + countryCode; 
+const getPlaceName = () => {
+    return store.city + ", " + store.countryCode; 
 }
 
 fetchData();
