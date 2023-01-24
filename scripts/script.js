@@ -81,7 +81,7 @@ const render = () => {
 }
 
 const getDayName = () => {
-    const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     return dayNames[new Date(store.localTime).getDay()];
 }
