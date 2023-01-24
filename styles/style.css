@@ -113,6 +113,18 @@ body {
     margin-bottom: 316px;
 }
 
+.weather__info-feelslike {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.weather__info-cloudcover {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
 .weather__info-precipitation {
     display: flex;
     justify-content: space-between;
